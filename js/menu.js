@@ -1,0 +1,14 @@
+const ARROW = `<i class="fa-solid fa-chevron-right"></i>`;
+$(document).ready(function (event) {
+    const menuItem = $('.menu-item');
+    menuItem.has('.menu-list').append(ARROW);
+
+    $('.menu').mouseleave(function (event) {
+        $(this).removeClass("hover")
+    })
+
+    $('.button-show-menu').hover(function (event) {
+        const menu = $(this).parent();
+        menu.addClass("hover")
+    })
+})

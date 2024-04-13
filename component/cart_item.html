@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.esm.min.js"></script>
+    <script src="../js/fontawesome.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"/>
+
+    <link rel="stylesheet" href="../css/cart-item.css">
+    <title>Cart item</title>
+</head>
+<body>
+<div class="cart-item border-1 border rounded-2 border-secondary-subtle p-3 position-relative">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-4 col-xl-1 col-md-2 col-sm-4">
+            <img class="cart-item-img" src="../image/logo/logo.jpg" width="75" height="75" alt="">
+        </div>
+        <div class="col-8 col-xl-9 col-md-4 col-sm-8">
+            <p class="cart-item-name m-0">Bút bi</p>
+            <p class="cart-item-type text-secondary m-0">Xanh</p>
+        </div>
+        <div class="col-xl-1 col-md-3 col-sm-6 col-6 text-center fw-bold">
+            <span class="cart-item-price">20000</span>
+            <span> </span>
+            <u>đ</u>
+        </div>
+        <div class="col-xl-1 col-md-3 col-sm-6 col-6">
+            <div class="d-flex justify-content-center">
+                <button type="button"
+                        class="decrease rounded-start-2 rounded-end-0  border-1 border-end-0 border-secondary"
+                        style="width: 30px; height: 30px">
+                    -
+                </button>
+                <input type="number" class="border-1 border-secondary text-center"
+                       style="width: 75px;height: 30px" value="0">
+                <button class="button increase rounded-start-0 rounded-end-2 border-1 border-start-0 border-secondary"
+                        style="width: 30px; height: 30px">
+                    +
+                </button>
+            </div>
+        </div>
+    </div>
+    <button class="position-absolute rounded-circle bg-black text-white m-2 top-0" style="right: 0">X
+    </button>
+</div>
+</body>
+</html>

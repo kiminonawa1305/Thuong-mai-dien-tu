@@ -1,0 +1,20 @@
+.product * {
+    transition: linear 200ms;
+}
+
+.product:hover .card-title .title {
+    color: var(--bs-primary) !important;
+}
+
+
+.product:hover {
+    border: solid 1px var(--bs-primary);
+}
+
+.product:hover .card-img-top {
+    scale: 1.1;
+}
+
+.tag {
+    clip-path: polygon(0 0, 60% 0%, 100% 50%, 60% 100%, 0 100%);
+}
