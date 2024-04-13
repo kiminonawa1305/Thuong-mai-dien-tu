@@ -2,6 +2,7 @@
 .sign-in,
 .forget-password {
     background-color: rgba(0, 117, 178, 0.7);
+    width: 600px;
 }
 
 input::placeholder {

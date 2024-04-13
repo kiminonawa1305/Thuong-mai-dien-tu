@@ -12,7 +12,6 @@
   display: block;
   width: 400px;
   height: 100px;
-  margin: 100px;
   overflow-y: hidden;
   border-radius: 10px;
 }
@@ -49,7 +48,8 @@
   font-size: 12px;
   width: 250px;
   top: 30px;
-  right: 15px;
+  right: 0;
+  transform: translateX(calc(50% - 40px));
   z-index: 1;
   border-radius: 5px;
 }
