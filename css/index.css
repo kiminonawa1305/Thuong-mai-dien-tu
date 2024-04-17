@@ -6,6 +6,10 @@ main section {
     margin-bottom: 20px;
 }
 
+section .section_header img {
+    height: 400px;
+}
+
 section .section_body {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -32,6 +36,14 @@ section .menu-item:hover,
 section .menu-item.active {
     color: var(--color-menu-item-active);
     background-color: var(--background-menu-item-active);
+}
+
+#carousel {
+    z-index: -1;
+}
+
+.carousel img {
+    height: 400px;
 }
 
 /**************section.deal***************/
