@@ -1,86 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/bootstrap.esm.min.js"></script>
-    <script src="../js/fontawesome.js" crossorigin="anonymous"></script>
-    <script src="../js/jquery.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"/>
-    <link rel="stylesheet" href="../css/product.css">
-    <title>Header</title>
-</head>
-<body>
-<header>
-    <div class="top bg-primary justify-content-center">
-        <div class="container">
-            <div class="row py-3 ">
-                <div class="logo col-2 text-white p-0">
-                    <a href="#" class="text-white text-decoration-none ou d-flex">
-                        <img src="../image/logo/logo.jpg" alt="Logo" class="rounded me-2" width="50" height="50">
-                        <h1 class="name m-0">Kimi</h1>
-                    </a>
+<div class="top bg-primary justify-content-center">
+    <div class="container">
+        <div class="row py-3 ">
+            <div class="logo col-2 text-white p-0">
+                <a href="#" class="text-white text-decoration-none ou d-flex">
+                    <img src="../image/logo/logo.jpg" alt="Logo" class="rounded me-2" width="50" height="50">
+                    <h1 class="name m-0">Kimi</h1>
+                </a>
+            </div>
+            <div class="search-product col-4 align-content-center">
+                <div class="input-group">
+                    <input id="search-product" type="text" class="form-control rounded rounded-end-0"
+                           placeholder="Recipient's username"
+                           aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <label for="search-product" class="input-group-text rounded rounded-start-0">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </label>
                 </div>
-                <div class="search-product col-4 align-content-center">
-                    <div class="input-group">
-                        <input id="search-product" type="text" class="form-control rounded rounded-end-0"
-                               placeholder="Recipient's username"
-                               aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <label for="search-product" class="input-group-text rounded rounded-start-0">
-                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-                        </label>
-                    </div>
-                </div>
-                <div class="contact-menu  col-2 p-0">
-                    <a href="tel:0855354919" class="text-decoration-none align-items-center text-white d-flex flex-row">
+            </div>
+            <div class="contact-menu  col-2 p-0">
+                <a href="tel:0855354919" class="text-decoration-none align-items-center text-white d-flex flex-row">
                         <span class="contact-menu-icon me-2">
                             <span class="bg-warning rounded-circle text-primary p-2">
                                 <i class="fa-sharp fa-solid fa-phone p-1"></i>
                             </span>
                         </span>
-                        <div class="align-content-center">
-                            <p class="contact-menu-top m-0">Hỗ trợ khách hàng</p>
-                            <p class="contact-menu-bottom fw-bold m-0 text-start">0855354919</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="sign-button col-2 text-white  d-flex flex-row">
+                    <div class="align-content-center">
+                        <p class="contact-menu-top m-0">Hỗ trợ khách hàng</p>
+                        <p class="contact-menu-bottom fw-bold m-0 text-start">0855354919</p>
+                    </div>
+                </a>
+            </div>
+            <div class="sign-button col-2 text-white  d-flex flex-row">
                     <span class="sign-button-icon me-2 align-content-center">
                         <span class="bg-warning rounded-circle text-primary p-2">
                             <i class="fa-sharp fa-solid fa-user p-1"></i>
                         </span>
                     </span>
-                    <div class="sign-button-display">
-                        <a href="#"
-                           class="sign-button-top d-inline-block text-decoration-none text-white fw-bold m-0 w-100 text-end">
-                            Đăng ký
-                        </a>
-                        <a href="#"
-                           class="sign-button-bottom d-inline-block fw-bold m-0 text-decoration-none text-white w-100 text-end">
-                            Đăng nhập
-                        </a>
-                    </div>
-                </div>
-                <div class="cart-menu col-2 align-content-center">
-                    <a href="#" class="d-inline-block text-decoration-none rounded text-white border border-white p-2">
-                        <span class="cart-menu-icon">
-                            <i class="fa-sharp fa-solid fa-cart-shopping fs-4"></i>
-                        </span>
-                        <span class="cart-menu-text fw-bold fs-5">Giỏ hàng</span>
-                        <span class="cart-menu-amount bg-warning p-2 text-center rounded">0</span>
+                <div class="sign-button-display">
+                    <a href="#"
+                       class="sign-button-top d-inline-block text-decoration-none text-white fw-bold m-0 w-100 text-end">
+                        Đăng ký
+                    </a>
+                    <a href="#"
+                       class="sign-button-bottom d-inline-block fw-bold m-0 text-decoration-none text-white w-100 text-end">
+                        Đăng nhập
                     </a>
                 </div>
             </div>
+            <div class="cart-menu col-2 align-content-center">
+                <a href="#" class="d-inline-block text-decoration-none rounded text-white border border-white p-2">
+                        <span class="cart-menu-icon">
+                            <i class="fa-sharp fa-solid fa-cart-shopping fs-4"></i>
+                        </span>
+                    <span class="cart-menu-text fw-bold fs-5">Giỏ hàng</span>
+                    <span class="cart-menu-amount bg-warning p-2 text-center rounded">0</span>
+                </a>
+            </div>
         </div>
     </div>
-    <div class="bottom mt-1 row px-5">
-        <menu class="col-3 w-auto"></menu>
-    </div>
-</header>
-
-
-</body>
-</html>
+</div>
+<div class="bottom mt-1 row px-5">
+    <menu class="col-3 w-auto"></menu>
+</div>
