@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="css/product-detail.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fontawesome.js"></script>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<header>
+</header>
+<main class="container mt-4 main-color_product">
+    <div class="row">
+        <section class="product-container d-flex bg-light">
+            <div class="product-detail-left col-xl-4 pe-5 col-xs-12 col-sm-12 col-md-8">
+                <div class="product-wrap-sticky">
+                    <div class="image-product-item pb-3 pt-0 ">
+                        <img src="image/product/demo_product.webp" id="large-product-image" alt="Bút bi Thiên Long"
+                             class="img-fluid">
+                    </div>
+                    <div class="product-image-list">
+                        <div class="product-image-item">
+                            <img src="image/product/demo_product.webp" alt="Bút bi Thiên Long" class="img-fluid">
+                        </div>
+                        <div class="product-image-item">
+                            <img src="image/product/demo_product.webp" alt="Bút bi Thiên Long" class="img-fluid">
+                        </div>
+                        <div class="product-image-item">
+                            <img src="image/product/demo_product.webp" alt="Bút bi Thiên Long" class="img-fluid">
+                        </div>
+                        <div class="product-image-item">
+                            <img src="image/product/demo_product.webp" alt="Bút bi Thiên Long" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-right col-xl-8 col-xs-12 col-sm-12">
+                <h1 class="fw-light">Bút bi Thiên Long</h1>
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <p class="fw-medium">Thương hiệu: <span class="text-primary">Thiên Long</span> |
+                            Tình trạng: <span class="text-primary">Còn hàng</span></p>
+                        <p class="fw-medium">Mã sản phẩm: <span class="text-primary">32130</span></p>
+
+                        <div class="product-price">
+                            <div class="row">
+                                <div class="col-9 d-flex">
+                                    <span class="fs-2 text-primary fw-medium">15,000đ</span>
+                                    <del class="f2-3 text-body-tertiary fw-medium">20000đ</del>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product-discount">
+                                        <div class="product-save">Tiết kiệm <strong>10%</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-prodcut">
+                            <div class="product-classify">
+                                <label for="product-classify" class="form-label">Phân loại</label>
+                                <select class="form-select" id="product-classify">
+                                    <option selected>Chọn loại màu sắc</option>
+                                    <option value="1">Mực đỏ</option>
+                                    <option value="2">Mực xanh</option>
+                                    <option value="3">Mực vàng</option>
+                                </select>
+                            </div>
+                            <div class="form-button">
+                                <div class="product-amount">
+                                    <label>Số lượng</label>
+                                    <div class="pt-2 d-flex w-25 ">
+                                        <button class="btn btn-primary rounded-0">-</button>
+                                        <input type="number" class="text-center w-50" value="1">
+                                        <button class="btn btn-primary rounded-0">+</button>
+                                    </div>
+                                </div>
+                                <div class="product-cart_button d-flex pt-3">
+                                    <button class="btn btn-primary w-50 p-2 me-2">Thêm vào giỏ hàng <i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+                                    <button class="btn btn-warning w-50 p-2">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 promolist">
+                            <div class="promolist-item">
+                                <div class="promolist-item-header d-flex">
+                                    <h6 class="promolist-item-icon fw-light pe-3">
+                                        <i class="fa-solid fa-gift"></i>
+                                    </h6>
+                                    <h6 class="promolist-item-title fw-light">Nhận quà tặng khi mua sản phẩm thỏa điều
+                                        kiện</h6>
+                                </div>
+                                <div class="promolist-item-content pt-2 d-flex">
+                                    <img src="image/giftbook.webp" alt="" class="img-promolist me-2">
+                                    <p class="promolist-item-content-text">Nhận ngay Quà tặng bộ 2 sticker trang trí
+                                        nhãn vở Thiên Long x1 khi số lượng mua đạt 2 sản phẩm.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promolist-note">
+                            <h6 class="fw-bold text-primary mb-0">Lưu ý</h6>
+                            <ul>
+                                <li class="fw-light text-primary">Sản phẩm quà tặng có giới hạn, chương trình có thể kết
+                                    thúc sớm hơn nếu hết số lượng quà
+                                </li>
+                                <li class="fw-light text-primary">Đối với các chương trình có nhiều mốc điều kiện giá
+                                    trị mua/số lượng mua thì chỉ áp dụng quà mốc cao nhất đơn hàng đạt được
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="promolist-note">
+                            <div class="fs-5 p-2">
+                                <a href="#"><i class="fs-4 fa-solid fa-truck"></i></a>
+                                <span class="ps-3 fw-light text-primary">Giao hàng toàn quốc</span>
+                            </div>
+                            <div class="fs-5 p-2">
+                                <a href=""><i class="fs-4 fa-regular fa-star"></i></a>
+                                <span class="ps-3 fw-light text-primary">Sản phẩm chính hãng</span>
+                            </div>
+                            <div class="fs-5 p-2">
+                                <a href=""><i class="fs-4 fa-solid fa-gift"></i></a>
+                                <span class="ps-3 fw-light text-primary">Tích điểm đổi quà</span>
+                            </div>
+                            <div class="fs-5 p-2">
+                                <a href=""><i class="fs-4 fa-solid fa-ticket"></i></a>
+                                <span class="ps-3 fw-light text-primary">voucher ưu đãi</span>
+                            </div>
+                        </div>
+                        <div class="product-vouchers">
+                            <div class="product-vouchers-item">
+                                <div class="vouchers-item-left">
+                                    <div class="voucher-items-icon"><a href=""><i class="fa-solid fa-ticket"></i></a>
+                                    </div>
+                                </div>
+                                <div class="vouchers-item-right fs-6">
+                                    <div class="voucher-items-title fw-bold">Giảm 10%</div>
+                                    <div class="voucher-items-content">Đơn hàng từ 100,000đ</div>
+                                    <div class="voucher-items-code fw-bold">EST1940948</div>
+                                    <div class="voucher-items-date">30/04/2024
+                                        <button class="btn-copy border-0 py-1 px-2 rounded-2 text-white bg-primary ps-1 float-end">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-vouchers-item">
+                                <div class="vouchers-item-left">
+                                    <div class="voucher-items-icon"><a href=""><i class="fa-solid fa-ticket"></i></a>
+                                    </div>
+                                </div>
+                                <div class="vouchers-item-right fs-6">
+                                    <div class="voucher-items-title fw-bold">Giảm 20%</div>
+                                    <div class="voucher-items-content">Đơn hàng từ 500,000đ</div>
+                                    <div class="voucher-items-code fw-bold">ASK909213</div>
+                                    <div class="voucher-items-date">30/04/2024
+                                        <button class="btn-copy border-0 py-1 px-2 rounded-2 text-white bg-primary ps-1 float-end">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-vouchers-item">
+                                <div class="vouchers-item-left">
+                                    <div class="voucher-items-icon"><a href=""><i class="fa-solid fa-ticket"></i></a>
+                                    </div>
+                                </div>
+                                <div class="vouchers-item-right fs-6">
+                                    <div class="voucher-items-title fw-bold">Giảm 30%</div>
+                                    <div class="voucher-items-content">Đơn hàng từ 1,000,000đ</div>
+                                    <div class="voucher-items-code fw-bold">WKN109213</div>
+                                    <div class="voucher-items-date">01/04/2024
+                                        <button class="btn-copy border-0 py-1 px-2 rounded-2 text-white bg-primary ps-1 float-end">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-container my-2 bg-light">
+                <h5 class="fw-bold pb-3">Sản phẩm cùng loại</h5>
+            <div class="container classfy-product-item">
+                <div class="px-2 card product rounded-4">
+                    <div class="card-img overflow-hidden rounded-bottom-0 rounded-4">
+                        <img src="../image/product/demo_product.webp" class="card-img-top" alt="san_pham.png">
+                    </div>
+                    <div class="card-body text-center bg-white py-2">
+                        <div class="card-title m-0">
+                            <span class="d-inline-block text-white bg-danger rounded px-1">New</span>
+                            <h5 class="title d-inline-block text-secondary">Hello world</h5>
+                        </div>
+                        <div class="card-text">
+                            <span class="new-price text-primary fw-bold">150000</span>
+                            <del class="old-price text-body-tertiary fw-bold">200000</del>
+                        </div>
+                    </div>
+                    <div class="card-footer border-0 bg-white d-flex justify-content-between rounded-4">
+                        <div class="align-content-center">
+                            <span class="tag bg-warning fs-6 d-inline-block text-white rounded ps-1 pe-3">-20%</span>
+                        </div>
+                        <div>
+                            <button class="border-0 bg-primary p-2 rounded-circle text-white align-content-end">
+                                <i class="fa-sharp fa-solid fa-eye"></i>
+                            </button>
+                            <button class="border-0 bg-danger p-2 rounded-circle text-white align-content-end">
+                                <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2 card product rounded-4">
+                    <div class="card-img overflow-hidden rounded-bottom-0 rounded-4">
+                        <img src="../image/product/demo_product.webp" class="card-img-top" alt="san_pham.png">
+                    </div>
+                    <div class="card-body text-center bg-white py-2">
+                        <div class="card-title m-0">
+                            <span class="d-inline-block text-white bg-danger rounded px-1">New</span>
+                            <h5 class="title d-inline-block text-secondary">Hello world</h5>
+                        </div>
+                        <div class="card-text">
+                            <span class="new-price text-primary fw-bold">150000</span>
+                            <del class="old-price text-body-tertiary fw-bold">200000</del>
+                        </div>
+                    </div>
+                    <div class="card-footer border-0 bg-white d-flex justify-content-between rounded-4">
+                        <div class="align-content-center">
+                            <span class="tag bg-warning fs-6 d-inline-block text-white rounded ps-1 pe-3">-20%</span>
+                        </div>
+                        <div>
+                            <button class="border-0 bg-primary p-2 rounded-circle text-white align-content-end">
+                                <i class="fa-sharp fa-solid fa-eye"></i>
+                            </button>
+                            <button class="border-0 bg-danger p-2 rounded-circle text-white align-content-end">
+                                <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2 card product rounded-4">
+                    <div class="card-img overflow-hidden rounded-bottom-0 rounded-4">
+                        <img src="../image/product/demo_product.webp" class="card-img-top" alt="san_pham.png">
+                    </div>
+                    <div class="card-body text-center bg-white py-2">
+                        <div class="card-title m-0">
+                            <span class="d-inline-block text-white bg-danger rounded px-1">New</span>
+                            <h5 class="title d-inline-block text-secondary">Hello world</h5>
+                        </div>
+                        <div class="card-text">
+                            <span class="new-price text-primary fw-bold">150000</span>
+                            <del class="old-price text-body-tertiary fw-bold">200000</del>
+                        </div>
+                    </div>
+                    <div class="card-footer border-0 bg-white d-flex justify-content-between rounded-4">
+                        <div class="align-content-center">
+                            <span class="tag bg-warning fs-6 d-inline-block text-white rounded ps-1 pe-3">-20%</span>
+                        </div>
+                        <div>
+                            <button class="border-0 bg-primary p-2 rounded-circle text-white align-content-end">
+                                <i class="fa-sharp fa-solid fa-eye"></i>
+                            </button>
+                            <button class="border-0 bg-danger p-2 rounded-circle text-white align-content-end">
+                                <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2 card product rounded-4">
+                    <div class="card-img overflow-hidden rounded-bottom-0 rounded-4">
+                        <img src="../image/product/demo_product.webp" class="card-img-top" alt="san_pham.png">
+                    </div>
+                    <div class="card-body text-center bg-white py-2">
+                        <div class="card-title m-0">
+                            <span class="d-inline-block text-white bg-danger rounded px-1">New</span>
+                            <h5 class="title d-inline-block text-secondary">Hello world</h5>
+                        </div>
+                        <div class="card-text">
+                            <span class="new-price text-primary fw-bold">150000</span>
+                            <del class="old-price text-body-tertiary fw-bold">200000</del>
+                        </div>
+                    </div>
+                    <div class="card-footer border-0 bg-white d-flex justify-content-between rounded-4">
+                        <div class="align-content-center">
+                            <span class="tag bg-warning fs-6 d-inline-block text-white rounded ps-1 pe-3">-20%</span>
+                        </div>
+                        <div>
+                            <button class="border-0 bg-primary p-2 rounded-circle text-white align-content-end">
+                                <i class="fa-sharp fa-solid fa-eye"></i>
+                            </button>
+                            <button class="border-0 bg-danger p-2 rounded-circle text-white align-content-end">
+                                <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2 card product rounded-4">
+                    <div class="card-img overflow-hidden rounded-bottom-0 rounded-4">
+                        <img src="../image/product/demo_product.webp" class="card-img-top" alt="san_pham.png">
+                    </div>
+                    <div class="card-body text-center bg-white py-2">
+                        <div class="card-title m-0">
+                            <span class="d-inline-block text-white bg-danger rounded px-1">New</span>
+                            <h5 class="title d-inline-block text-secondary">Hello world</h5>
+                        </div>
+                        <div class="card-text">
+                            <span class="new-price text-primary fw-bold">150000</span>
+                            <del class="old-price text-body-tertiary fw-bold">200000</del>
+                        </div>
+                    </div>
+                    <div class="card-footer border-0 bg-white d-flex justify-content-between rounded-4">
+                        <div class="align-content-center">
+                            <span class="tag bg-warning fs-6 d-inline-block text-white rounded ps-1 pe-3">-20%</span>
+                        </div>
+                        <div>
+                            <button class="border-0 bg-primary p-2 rounded-circle text-white align-content-end">
+                                <i class="fa-sharp fa-solid fa-eye"></i>
+                            </button>
+                            <button class="border-0 bg-danger p-2 rounded-circle text-white align-content-end">
+                                <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer>
+</footer>
+</body>
+<script>
+    $('header').load("layout/header.html")
+    // $('#form').load("layout/product.html")
+    $('footer').load("layout/footer.html")
+    var items = document.querySelectorAll('.product-image-item');
+    var selectedItem = null;
+    var productImage = document.querySelector('#large-product-image');
+
+    items.forEach(function (item, index) {
+        item.addEventListener('click', function () {
+            if (selectedItem != null) {
+                selectedItem.style.border = 'none';
+            }
+            item.style.border = '1px solid #000';
+            selectedItem = item;
+
+            console.log(selectedItem);
+
+            const selectedItemImage = selectedItem.children[0];
+            productImage.src = selectedItemImage.src;
+        });
+    });
+</script>
+</html>
