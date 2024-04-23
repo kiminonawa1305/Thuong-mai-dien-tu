@@ -1,3 +1,8 @@
+.product {
+    width: 19rem;
+    border: solid 2px white;
+}
+
 .product * {
     transition: linear 200ms;
 }
@@ -8,7 +13,7 @@
 
 
 .product:hover {
-    border: solid 1px var(--bs-primary);
+    border: solid 2px var(--bs-primary);
 }
 
 .product:hover .card-img-top {
