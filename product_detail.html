@@ -18,25 +18,25 @@
 </header>
 <main class="container mt-4 main-color_product">
     <div class="row">
-        <section class="product-container d-flex bg-light">
+        <section class="product-container my-2 d-flex bg-light">
             <div class="product-detail-left col-xl-4 pe-5 col-xs-12 col-sm-12 col-md-8">
                 <div class="product-wrap-sticky">
                     <div class="image-product-item pb-3 pt-0 ">
-                        <img src="image/product/demo_product.webp" id="large-product-image" alt="Bút bi Thiên Long"
+                        <img src="image/product/sp.webp" id="large-product-image" alt="Bút bi Thiên Long"
                              class="img-fluid">
                     </div>
                     <div class="product-image-list">
                         <div class="product-image-item">
-                            <img src="image/product/demo_product.webp" alt="Bút bi Thiên Long" class="img-fluid">
+                            <img src="image/product/sp.webp" alt="Bút bi Thiên Long" class="img-product-s">
                         </div>
                         <div class="product-image-item">
-                            <img src="image/product/demo_product.webp" alt="Bút bi Thiên Long" class="img-fluid">
+                            <img src="image/product/gel1.webp" alt="Bút bi Thiên Long" class="img-product-s">
                         </div>
                         <div class="product-image-item">
-                            <img src="image/product/demo_product.webp" alt="Bút bi Thiên Long" class="img-fluid">
+                            <img src="image/product/demo_product.webp" alt="Bút bi Thiên Long" class="img-product-s">
                         </div>
                         <div class="product-image-item">
-                            <img src="image/product/demo_product.webp" alt="Bút bi Thiên Long" class="img-fluid">
+                            <img src="image/product/demo_product.webp" alt="Bút bi Thiên Long" class="img-product-s">
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                                     <label>Số lượng</label>
                                     <div class="pt-2 d-flex w-25 ">
                                         <button class="btn btn-primary rounded-0">-</button>
-                                        <input type="number" class="text-center w-50" value="1">
+                                        <input type="text" class="text-center w-50" value="1">
                                         <button class="btn btn-primary rounded-0">+</button>
                                     </div>
                                 </div>
@@ -190,7 +190,7 @@
             </div>
         </section>
         <section class="product-container my-2 bg-light">
-                <h5 class="fw-bold pb-3">Sản phẩm cùng loại</h5>
+                <h5 class="fw-bold py-3 px-2">Sản phẩm cùng loại</h5>
             <div class="container classfy-product-item">
                 <div class="px-2 card product rounded-4">
                     <div class="card-img overflow-hidden rounded-bottom-0 rounded-4">
@@ -334,6 +334,70 @@
                 </div>
             </div>
         </section>
+        <section class="product-container my-2 bg-light">
+                    <h5 class="fw-bold px-2 py-2">Mô tả sản phẩm</h5>
+                <div class="rte product_getcontent py-3 pos-relative">
+                    <div id="content" class="">
+                        <p><strong>Thông số kĩ thuật :</strong></p>
+                        <table class="table table-striped">
+                            <tbody style="box-sizing: border-box;">
+                            <tr>
+                                <td><span>Thương hiệu</span></td>
+                                <td>Thiên Long</td>
+                            </tr>
+                            <tr>
+                                <td>Lực bấm</td>
+                                <td>Bấm được 12 tờ A4</td>
+                            </tr>
+                            <tr>
+                                <td>Kim bấm</td>
+                                <td>Số 10</td>
+                            </tr>
+                            <tr>
+                                <td>Xuất xứ</td>
+                                <td>Việt Nam</td>
+                            </tr>
+                            <tr>
+                                <td>Sản xuất</td>
+                                <td>Trung Quốc</td>
+                            </tr>
+                            <tr>
+                                <td>Khuyến cáo</td>
+                                <td>Tránh nguồn nhiệt, hóa chất. Không thích hợp cho trẻ dưới 3 tuổi.</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p style="text-align: center"><img src="//product.hstatic.net/1000230347/product/st-023_st-024_8d53abdf82514893ae6364239f4c6d45.jpg"></p>
+                        <p style="text-align: center"><img src="//product.hstatic.net/1000230347/product/st-023_b76039034ba94fb5aa3d6e7297bb81ad.jpg"></p>
+                        <p style="text-align: center"><img src="//product.hstatic.net/1000230347/product/st-024_4865ebe4087344f9b9add895d9865616.jpg"></p>
+
+                    </div>
+                    <div class="text-center">
+                        <button id="show-hiddenbtn" class="btn border border-primary">
+                            Xem thêm
+                        </button>
+                    </div>
+                </div>
+        </section>
+        <section class="product-container my-2 bg-light">
+<h5 class="fw-bold px-2 py-2">Đánh giá sản phẩm</h5>
+            <div class="product-comment">
+                <div class="product-comment-item">
+                    <div class="product-comment-item-header d-flex">
+                        <div class="product-comment-item-avatar">
+                            <img src="image/avatar.webp" alt="avatar" class="img-avatar">
+                        </div>
+                        <div class="product-comment-item-info">
+                            <div class="product-comment-item-name">Nguyễn Văn A</div>
+                            <div class="product-comment-item-date">12/12/2021</div>
+                        </div>
+                    </div>
+                    <div class="product-comment-item-content">
+                        <div class="product-comment-item-rating">
+
+
+        </section>
+
     </div>
 </main>
 <footer>
@@ -361,5 +425,31 @@
             productImage.src = selectedItemImage.src;
         });
     });
+
+    // Initially hide all <p> elements except the first one
+    var content = document.getElementById('content');
+    var pElements = content.getElementsByTagName('p');
+    for (var i = 0; i < pElements.length; i++) {
+        pElements[i].style.display = 'none';
+    }
+
+    // Add event listener to the "show more/less" button
+    var button = document.getElementById('show-hiddenbtn');
+    button.addEventListener('click', function() {
+        if (button.textContent === 'Xem thêm') {
+            // Show all <p> elements
+            for (var i = 0; i < pElements.length; i++) {
+                pElements[i].style.display = 'block';
+            }
+            button.textContent = 'Thu gọn';
+        } else {
+            // Hide all <p> elements except the first one
+            for (var i = 1; i < pElements.length; i++) {
+                pElements[i].style.display = 'none';
+            }
+            button.textContent = 'Xem thêm';
+        }
+    });
+
 </script>
 </html>
