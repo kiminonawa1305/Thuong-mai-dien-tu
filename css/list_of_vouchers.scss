@@ -1,0 +1,18 @@
+$color-coupon-blue: #338dbc;
+$color-coupon-btn-hover: #3da9e2;
+.accordion-button{
+  color: $color-coupon-blue;
+}
+.accordion-button:not(.collapsed){
+  @extend .accordion-button;
+}
+.accordion-button.changed::after{
+  color: $color-coupon-blue;
+  margin-left: 0;
+}
+.apply_coupon_id{
+  background-color: $color-coupon-blue;
+}
+.apply_coupon_id:hover{
+  background-color: $color-coupon-btn-hover;
+}
