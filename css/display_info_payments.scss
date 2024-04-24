@@ -1,0 +1,15 @@
+@mixin box($width, $height: $width){
+  width: $width;
+  height: $height;
+}
+.info-items__image{
+  div{
+    @include box(4.5em);
+    img{
+      @include box(100%);
+    }
+  }
+}
+.border-dotted{
+  border: 1px dashed;
+}
