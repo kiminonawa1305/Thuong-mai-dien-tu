@@ -10,9 +10,11 @@ $color-coupon-btn-hover: #3da9e2;
   color: $color-coupon-blue;
   margin-left: 0;
 }
-.apply_coupon_id{
+.apply_coupon_btn{
   background-color: $color-coupon-blue;
+  height: 32px;
+  width: 72px;
 }
-.apply_coupon_id:hover{
+.apply_coupon_btn:hover{
   background-color: $color-coupon-btn-hover;
 }
