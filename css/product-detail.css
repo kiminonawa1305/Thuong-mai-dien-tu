@@ -185,3 +185,54 @@ body {
     flex-direction: row;
     display: flex;
 }
+.product-comment-form {
+    display: flex;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+    padding: 10px;
+    background: #ebf0ff;
+    border: 1px solid #d6e0ff;
+    flex-direction: column;
+}
+.comment-details-count {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 20px;
+    margin-bottom: -15px;
+}
+.product-comment-details-item {
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--write-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.87);
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    margin-bottom: 15px;
+}
+.product-comment-details-item.active {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.list-comment-user {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.comment-user {
+    margin-top: 10px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 125px;
+}
+
+.review-star-active i{
+    color: #ffcc00 !important;
+}
