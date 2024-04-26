@@ -1,5 +1,6 @@
 $(document).ready(function(){
     loadCoupon()
+    addEventForShortCoupon()
 })
 
 function loadCoupon() {
@@ -7,5 +8,7 @@ function loadCoupon() {
 }
 
 function addEventForShortCoupon() {
-    $('')
+    $('.short_coupon').click(function(){
+        $('.btn-show-sale').trigger('click')
+    })
 }

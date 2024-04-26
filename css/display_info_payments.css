@@ -11,6 +11,10 @@
   border: 1px dashed;
 }
 
+.short_coupon {
+  cursor: pointer;
+}
+
 .short_coupon span::before {
   position: absolute;
   content: "";
