@@ -8,7 +8,7 @@ $color-coupon-btn-hover: #3da9e2;
 }
 .accordion-button.changed::after{
   color: $color-coupon-blue;
-  margin-left: 0;
+  margin-left: 4px;
 }
 .apply_coupon_btn{
   background-color: $color-coupon-blue;
@@ -17,4 +17,8 @@ $color-coupon-btn-hover: #3da9e2;
 }
 .apply_coupon_btn:hover{
   background-color: $color-coupon-btn-hover;
+}
+.see-more-btn::after{
+  color: $color-coupon-blue;
+  margin-left: 4px;
 }

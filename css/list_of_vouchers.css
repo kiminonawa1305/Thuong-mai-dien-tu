@@ -4,7 +4,7 @@
 
 .accordion-button.changed::after {
   color: #338dbc;
-  margin-left: 0;
+  margin-left: 4px;
 }
 
 .apply_coupon_btn {
@@ -15,6 +15,11 @@
 
 .apply_coupon_btn:hover {
   background-color: #3da9e2;
+}
+
+.see-more-btn::after {
+  color: #338dbc;
+  margin-left: 4px;
 }
 
 /*# sourceMappingURL=list_of_vouchers.css.map */
