@@ -1,0 +1,20 @@
+.accordion-button, .accordion-button:not(.collapsed) {
+  color: #338dbc;
+}
+
+.accordion-button.changed::after {
+  color: #338dbc;
+  margin-left: 0;
+}
+
+.apply_coupon_btn {
+  background-color: #338dbc;
+  height: 32px;
+  width: 72px;
+}
+
+.apply_coupon_btn:hover {
+  background-color: #3da9e2;
+}
+
+/*# sourceMappingURL=list_of_vouchers.css.map */
