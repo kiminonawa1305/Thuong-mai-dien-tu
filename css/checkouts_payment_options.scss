@@ -15,3 +15,13 @@ a {
 .right-payment{
   @extend .payment_frame;
 }
+.image-square{
+  img{
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+  }
+}
+.payment_frame{
+  height: 100vh;
+}

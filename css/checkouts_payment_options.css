@@ -13,4 +13,14 @@ a {
   background-color: #fafafa;
 }
 
+.image-square img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+
+.payment_frame, .right-payment {
+  height: 100vh;
+}
+
 /*# sourceMappingURL=checkouts_payment_options.css.map */
