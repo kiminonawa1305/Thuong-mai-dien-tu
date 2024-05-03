@@ -55,7 +55,7 @@
                 </div>
 
                 <form action="" class="form-address row g-2">
-                    <div class="saved_address form-floating position-relative">
+                    <div class="saved_address form-floating position-relative p-0">
                         <select name="" id="add-new-address" class="form-control chosen-select  rounded-0" aria-label="">
                             <option value="" data-properties="" selected>hahahaha</option>
                             <option value="" data-properties="">heheh</option>
@@ -64,53 +64,59 @@
                         <span class="select-arrow"></span>
                     </div>
 
-                    <div class="name form-floating">
+                    <div class="name form-floating p-0">
                         <input type="text" id="recipient-name" class="form-control form-control-sm rounded-0"
                                                            placeholder="Họ và tên">
                         <label for="recipient-name">Họ và tên</label>
                     </div>
 
-                    <div class="phone-number form-floating">
+                    <div class="phone-number form-floating p-0">
                         <input type="text" id="phone-number" class="form-control form-control-sm rounded-0"
                                                                    placeholder="Số điện thoại">
                         <label for="phone-number">Số điện thoại</label>
                     </div>
 
-                    <div class="address form-floating py-0">
+                    <div class="address form-floating p-0">
                         <input type="text" id="address" class="form-control rounded-0 form-control-sm"
                                                               placeholder="Địa chỉ">
                         <label for="address">Địa chỉ</label>
                     </div>
 
-                    <div class="input-group row g-2">
-                        <div class="form-floating col position-relative">
+                    <div class="input-group d-flex justify-content-between m-0 p-0 mt-2">
+                        <div class="form-floating  position-relative">
                             <select id="province" name="province" class="col province form-control form-control-sm rounded-0">
+                                <option selected disabled>Tỉnh / thành</option>
                                 <option value=""></option>
                                 <option value="" ></option>
                             </select>
                             <label for="province">Tỉnh / thành</label>
                             <span class="select-arrow"></span>
                         </div>
-                        <div class="form-floating col position-relative">
+                        <div class="form-floating  position-relative">
                             <select id="district" name="district" class="col district form-control form-control-sm rounded-0">
-                                <option value="" selected></option>
+                                <option selected disabled>Tỉnh / thành</option>
+                                <option value=""></option>
                                 <option value="" ></option>
                             </select>
                             <label for="district">Huyện / quận</label>
                             <span class="select-arrow"></span>
                         </div>
-                        <div class="form-floating col position-relative">
+                        <div class="form-floating position-relative">
                             <select id="ward" name="ward" class="col ward form-control form-control-sm rounded-0">
-                                <option value="" selected></option>
+                                <option selected disabled>Tỉnh / thành</option>
+                                <option value=""></option>
                                 <option value="" ></option>
                             </select>
                             <label for="ward">Xã / phường</label>
                             <span class="select-arrow"></span>
                         </div>
                     </div>
+                    <div class="go-to-payment d-flex justify-content-end my-3 p-2">
+                        <button type="submit" class="btn btn-primary rounded-0">Tiếp tục đến phương thức thanh toán</button>
+                    </div>
                 </form>
             </div>
-            <div class="foot"></div>
+            <div class="foot mx-3 border-top border-dark-subtle border-1 text-center"> Powered by Haravan</div>
         </div>
 
         <div class="payment_frame col-4 border-dark-subtle border-start border-1">
