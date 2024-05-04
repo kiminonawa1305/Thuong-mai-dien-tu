@@ -9,55 +9,108 @@ $color-yellow: #ffc107;
   height: $height;
 }
 
-.main-frame {
+
+#main-frame {
   background-color: $color-bg-main;
-}
 
-.menu-personal {
-  background-color: $color-sub-frame;
-}
+  .menu-personal {
+    @include box(auto, 100%);
+    background-color: $color-sub-frame;
+    min-height: auto;
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-16%, 1.5rem);
+  }
+  .description-state{
+    background-color: $color-bg-main;
 
-.user-info__avatar {
-  @include box(60px);
-}
+    .type-of-state{
+      margin: 0.5rem 0;
+      align-items: center;
+      li:last-child{
+        margin: 0 0.5rem;
+      }
+    }
+    ul{
+      padding: 0;
+      margin: 0;
+    }
+    .rounded-circle{
+      @include box(1rem);
+    }
+  }
 
-.user-info__email {
-  color: $color-menu-item;
-}
+  .user-info__avatar {
+    @include box(60px);
+  }
 
-.menu-personal {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform: translate(-16%, 96%);
-}
+  .menu-personal__base-info {
+    font-size: small;
+  }
 
-.menu-personal__items {
-  .item{
-    cursor: pointer;
+  .user-info__email {
     color: $color-menu-item;
   }
 
-  .item:hover{
-    background-color: $color-bg-main;
-  }
-  .active {
-    color: $color-yellow;
-    position: relative;
+  .menu-personal__items {
+    .item {
+      cursor: pointer;
+      color: $color-menu-item;
+    }
+
+    .item:hover {
+      background-color: $color-bg-main;
+    }
+
+    .active {
+      color: $color-yellow;
+      position: relative;
+    }
+
+    .active::before {
+      position: absolute;
+      content: '';
+      @include box(2%, 100%);
+      background-color: $color-yellow;
+      top: 0;
+      left: 0;
+      border-radius: 25px;
+    }
   }
 
-  .active::before {
-    position: absolute;
-    content: '';
-    @include box(2%,100%);
-    background-color: $color-yellow;
-    top: 0;
-    left: 0;
-    border-radius: 25px;
+  .content {
+    @include box(90%, auto);
+    background-color: $color-sub-frame;
+  }
+
+  input {
+    outline: 0;
+  }
+
+  select {
+    @extend input;
+  }
+
+  .list-products {
+    li {
+      display: inline-block;
+    }
+
+  }
+
+  .product-item {
+    img {
+      @include box(32px, 32px);
+      object-fit: contain;
+      padding: 0;
+      border-radius: 4px;
+    }
+  }
+
+  .list-products{
+    // chỉnh lại bg của ul theo chẵn lẻ
   }
 }
 
-.content{
-  @include box(80%, auto);
-  background-color: $color-sub-frame;
-}
