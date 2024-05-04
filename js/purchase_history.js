@@ -6,7 +6,6 @@ $(document).ready(function(){
 })
 
 function addEventClick(items) {
-    console.log('addEventClick')
     items.on('click',function (){
         items.removeClass('active')
         $(this).addClass('active')
