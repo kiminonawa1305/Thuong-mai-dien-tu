@@ -1,0 +1,58 @@
+@import url(bootstrap-reboot.css);
+
+$color-bg-main: #f5f6fa;
+$color-menu-item: #b4c2df;
+$color-sub-frame: #ffffff;
+$color-yellow: #ffc107;
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+.main-frame {
+  background-color: $color-bg-main;
+}
+
+.menu-personal {
+  background-color: $color-sub-frame;
+}
+
+.user-info__avatar {
+  @include box(60px);
+}
+
+.user-info__email {
+  color: $color-menu-item;
+}
+
+.menu-personal {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-16%, 96%);
+}
+
+.menu-personal__items {
+  .item{
+    cursor: pointer;
+    color: $color-menu-item;
+  }
+
+  .item:hover{
+    background-color: $color-bg-main;
+  }
+  .active {
+    color: $color-yellow;
+    position: relative;
+  }
+
+  .active::before {
+    position: absolute;
+    content: '';
+    @include box(2%,100%);
+    background-color: $color-yellow;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+  }
+}

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>KIMI - Lịch sử mua hàng</title>
     <title>Trang chủ</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -17,15 +16,31 @@
     <link rel="stylesheet" href="css/purchase_history.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
 <header></header>
 <main class="container">
-    <div class="main-frame position-relative">
+    <div class="main-frame p-5 position-relative rounded-3">
         <div class="menu-personal rounded-3">
-            <div class="menu-personal__base-info ps-3 pb-3 pt-4 pe-4">
-                <div class="user-info fw-bold"><img src="image/logo/logo.jpg" alt="avatar" class="user-info__avatar rounded-3"><span
-                        class="fs-6">Xin chào, Phong</span><span class="user-info__email">xyz123@gmail.com</span></div>
+            <div class="menu-personal__base-info pb-3 pt-5">
+                <div class="user-info mx-5">
+                    <img src="image/logo/logo.jpg" alt="avatar"
+                                                    class="user-info__avatar rounded-3">
+                    <p class="fw-bold">Chào, Phong</p>
+                    <p class="user-info__email">xyz123@gmail.com</p></div>
+
+                <div class="menu-personal__items my-5">
+                    <div class="item px-5 py-2">
+                        <span class="me-3"><i class="fa-solid fa-user"></i></span><span>Thông tin cá nhân</span>
+                    </div>
+                    <div class="item px-5 py-2 active">
+                        <span class="me-3"><i class="fa-solid fa-rectangle-vertical-history"></i></span><span>Lịch sử mua hàng</span>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2 d-flex justify-content-center">
+                <button class="btn border border-2  px-5 py-2"><i class="fa-solid fa-right-from-bracket fa-rotate-180"></i></button>
             </div>
         </div>
         <div class="content"></div>
