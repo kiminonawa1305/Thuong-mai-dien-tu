@@ -22,7 +22,7 @@
 <header></header>
 <main class="container">
     <div class="main-frame p-5 position-relative rounded-3">
-        <div class="menu-personal rounded-3">
+        <div class="menu-personal rounded-3 shadow-sm">
             <div class="menu-personal__base-info pb-3 pt-5">
                 <div class="user-info mx-5">
                     <img src="image/logo/logo.jpg" alt="avatar"
@@ -43,7 +43,29 @@
                 <button class="btn bg-danger-subtle text-danger  px-5 py-2"><i class="fa-solid fa-right-from-bracket fa-rotate-180"></i></button>
             </div>
         </div>
-        <div class="content"></div>
+        <div class="content rounded-3">
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="nav-filter col-6 p-3">
+                    <div class="search d-flex justify-content-end align-items-center">
+                        <input type="text" id="search-name-product" class="rounded-2 py-1 ps-1 pe-5 border-0 bg-body-secondary" placeholder="Tìm tên sản phẩm"><label
+                            for="search-name-product"></label>
+
+                        <div class="floating-label">
+
+                        </div>
+                        <select name="filter" id="filter-product" class="form-select p-2 border border-1 rounded-1">
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        <label for="filter-product">Filter</label>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 <footer></footer>

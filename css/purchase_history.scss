@@ -56,3 +56,8 @@ $color-yellow: #ffc107;
     border-radius: 25px;
   }
 }
+
+.content{
+  @include box(80%, auto);
+  background-color: $color-sub-frame;
+}
