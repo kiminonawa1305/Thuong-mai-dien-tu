@@ -3,6 +3,7 @@
 $color-bg-main: #f5f6fa;
 $color-menu-item: #b4c2df;
 $color-sub-frame: #ffffff;
+$color-bg-product-item: #fafbfb;
 $color-yellow: #ffc107;
 @mixin box($width, $height: $width) {
   width: $width;
@@ -23,23 +24,28 @@ $color-yellow: #ffc107;
     top: 0;
     transform: translate(-16%, 1.5rem);
   }
-  .description-state{
+
+  .description-state {
     background-color: $color-bg-main;
     text-align: center;
-    .type-of-state{
+
+    .type-of-state {
       margin: 0.5rem 0;
       align-items: center;
-      li:last-child{
+
+      li:last-child {
         margin: 0 0.5rem;
         padding: 12px;
 
       }
     }
-    ul{
+
+    ul {
       padding: 0;
       margin: 0;
     }
-    .bg-icon{
+
+    .bg-icon {
       @include box(1.5rem);
     }
   }
@@ -100,11 +106,21 @@ $color-yellow: #ffc107;
       display: inline-block;
       text-align: center;
     }
-    span.state{
+
+    span.state {
       @include box(1.5rem);
       display: inline-block;
     }
 
+    ul:nth-child(odd):not(:first-child) {
+      background-color: $color-bg-product-item
+    }
+
+    .name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 
   .product-item {
@@ -114,10 +130,6 @@ $color-yellow: #ffc107;
       padding: 0;
       border-radius: 4px;
     }
-  }
-
-  .list-products{
-    // chỉnh lại bg của ul theo chẵn lẻ
   }
 }
 
