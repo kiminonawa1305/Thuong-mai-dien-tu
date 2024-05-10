@@ -25,20 +25,22 @@ $color-yellow: #ffc107;
   }
   .description-state{
     background-color: $color-bg-main;
-
+    text-align: center;
     .type-of-state{
       margin: 0.5rem 0;
       align-items: center;
       li:last-child{
         margin: 0 0.5rem;
+        padding: 12px;
+
       }
     }
     ul{
       padding: 0;
       margin: 0;
     }
-    .rounded-circle{
-      @include box(1rem);
+    .bg-icon{
+      @include box(1.5rem);
     }
   }
 
@@ -95,6 +97,11 @@ $color-yellow: #ffc107;
 
   .list-products {
     li {
+      display: inline-block;
+      text-align: center;
+    }
+    span.state{
+      @include box(1.5rem);
       display: inline-block;
     }
 

@@ -26,7 +26,6 @@ function customStateElements(elements){
 
         switch (state) {
             case 0:
-                console.log('state')
                 $(element).css('background-color', '#f1aeb5').css('color', '#dc3545')
                 break
             case 1:
