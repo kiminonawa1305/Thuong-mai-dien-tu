@@ -1,8 +1,5 @@
 $(document).ready(function(){
     const menuItems = $('.menu-personal__items .item')
-    $('header').load('layout/header.html');
-    $('footer').load('layout/footer.html');
-    $('.display-categories').load('layout/purchase_history.html')
     addEventClick(menuItems)
 })
 

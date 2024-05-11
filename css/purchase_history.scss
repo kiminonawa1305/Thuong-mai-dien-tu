@@ -1,5 +1,8 @@
 @import url(info_account.scss);
 
+#main-frame{
+  background-color: $color-bg-main;
+}
 .content {
   @include box(90%, auto);
   background-color: $color-sub-frame;

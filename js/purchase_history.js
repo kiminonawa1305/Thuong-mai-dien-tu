@@ -1,5 +1,9 @@
 $(document).ready(function(){
     const states = $('.state[data-state]')
+
+    $('header').load('layout/header.html');
+    $('footer').load('layout/footer.html');
+    $('.categories-info').load('layout/info_account.html');
     customStateElements(states)
 })
 
