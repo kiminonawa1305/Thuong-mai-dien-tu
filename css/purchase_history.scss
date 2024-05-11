@@ -30,7 +30,6 @@ $color-yellow: #ffc107;
     text-align: center;
 
     .type-of-state {
-      margin: 0.5rem 0;
       align-items: center;
 
       li:last-child {
@@ -102,6 +101,7 @@ $color-yellow: #ffc107;
   }
 
   .list-products {
+    @include box(auto, 300px);
     li {
       display: inline-block;
       text-align: center;
