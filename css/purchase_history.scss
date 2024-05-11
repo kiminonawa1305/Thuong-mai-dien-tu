@@ -1,5 +1,12 @@
-@import url(info_account.scss);
-
+$color-bg-main: #f5f6fa;
+$color-menu-item: #b4c2df;
+$color-sub-frame: #ffffff;
+$color-bg-product-item: #fafbfb;
+$color-yellow: #ffc107;
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
 #main-frame{
   background-color: $color-bg-main;
 }
