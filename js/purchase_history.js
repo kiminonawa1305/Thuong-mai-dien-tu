@@ -1,18 +1,8 @@
 $(document).ready(function(){
-    const menuItems = $('.menu-personal__items .item')
     const states = $('.state[data-state]')
-    $('header').load('layout/header.html');
-    $('footer').load('layout/footer.html');
-    addEventClick(menuItems)
     customStateElements(states)
 })
 
-function addEventClick(items) {
-    items.on('click',function (){
-        items.removeClass('active')
-        $(this).addClass('active')
-    })
-}
 /*
 0. đã hủy (data-state = 0)
 1. đang chờ xác nhận (data-state = 1)
