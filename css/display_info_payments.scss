@@ -1,23 +1,37 @@
 $color-red: #dc3545;
-@mixin box($width, $height: $width){
+@mixin box($width, $height: $width) {
   width: $width;
   height: $height;
 }
-.info-items__image{
-  div{
-    @include box(4.5em);
-    img{
-      @include box(100%);
+
+
+.info-items {
+  &__image {
+    > div {
+      @include box(5em);
+
+      img {
+        @include box(100%);
+        border-radius: 5px;
+      }
     }
   }
+
+  &__quantity {
+    border-radius: 2px;
+    @include box(2em);
+  }
 }
-.border-dotted{
+
+.border-dotted {
   border: 1px dashed;
 }
-.short_coupon{
+
+.short_coupon {
   cursor: pointer;
 }
-.short_coupon span::before{
+
+.short_coupon span::before {
   position: absolute;
   content: "";
   width: 12px;
@@ -33,7 +47,8 @@ $color-red: #dc3545;
   top: 36%;
   left: -6px;
 }
-.short_coupon span::after{
+
+.short_coupon span::after {
   position: absolute;
   content: "";
   width: 12px;

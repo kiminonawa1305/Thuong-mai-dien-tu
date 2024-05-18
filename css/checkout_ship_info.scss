@@ -4,12 +4,12 @@ $color-bg-payment: #fafafa;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
-
 }
 a {
   color: black;
 }
 .payment_frame{
+  padding-top: 25px;
   background-color: $color-bg-payment;
 }
 .right-payment{

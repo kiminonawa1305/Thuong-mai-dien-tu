@@ -10,6 +10,7 @@ a {
 }
 
 .payment_frame, .right-payment {
+  padding-top: 25px;
   background-color: #fafafa;
 }
 
